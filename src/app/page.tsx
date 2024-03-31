@@ -19,7 +19,7 @@ export default function Home() {
     const newShape = new ShapeX();
     newShape.addPoint(new ShapeXPoint(Math.random() * 288, 0, 1));
 
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 9; i++) {
       newShape.addPoint(
         new ShapeXPoint(
           144 + Math.random() * 144,
@@ -29,9 +29,10 @@ export default function Home() {
       );
     }
 
-    newShape.addPoint(new ShapeXPoint(Math.random() * 288, 480, 1));
+    newShape.addPoint(new ShapeXPoint(144 + Math.random() * 144, 479, 1));
+    newShape.addPoint(new ShapeXPoint(Math.random() * 144, 479, 1));
 
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 9; i++) {
       newShape.addPoint(
         new ShapeXPoint(
           Math.random() * 144,

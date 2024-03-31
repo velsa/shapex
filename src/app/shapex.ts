@@ -39,7 +39,7 @@ export class ShapeX {
 
     current.next = point;
 
-    console.log(this.print());
+    // console.log(this.print());
   }
 
   addPointBetween(p1: ShapeXPoint, p2: ShapeXPoint, point: ShapeXPoint) {
