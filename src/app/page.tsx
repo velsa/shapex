@@ -1,11 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Canvas from "./canvas";
 import { ShapeX, ShapeXPoint } from "./shapex";
 
 export default function Home() {
   const [shape, setShape] = useState(new ShapeX());
+
+  useEffect(() => {
+    generateShape();
+  }, []);
 
   const handleClick = () => {
     generateShape();
